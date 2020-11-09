@@ -1,1 +1,48 @@
-ћтћтттттттттттттттттттттттттттттттттттт
+ere you can see the basics workflow for git.
+
+After cloning your repo from any git platform provider Like github, gitlab, bitbucket etc....
+Firstly check branch :
+$ git branch (your base branch, Most likely develop or master. Personally consider develop as a base branch).
+
+Fetch latest remote code to local : 
+$ git pull (for la test develop code)
+
+Checkout new branch as per feature and bug named branch:
+$ git checkout -b newBranchName
+
+(If you are working on any new feature than give branch name feature/login-feature or you are working on any bug than give branch name bug/login-bug 
+This way you can eaisily identify/judge your branch by name.)
+
+After finish your work in your feature/bug branch.(in red colored)
+$ git status (after Changes )
+
+Add changed file into staging
+
+$ git add . || $ git add .. (dot) (for add file in staging)
+
+Check staging file (in green colored)
+$ git status
+
+Add commit message
+$ git commit -m "Commit message"
+
+checkout your base branch
+$ git checkout develop (switch to develop)
+
+For latest code (if other guy working on it)
+$ git pull (for latest develop code)
+
+Checkout your previous feature/bug branch
+$ git checkout YOUR_PREVIOUS_BRANCH
+
+Rebase your branch with develop or master.
+$ git rebase develop
+
+Push your feature/bug branch to remote:
+$ git push (it will suggest command if its not in remote)
+
+
+After this open your git platform provider Like github, gitlab, bitbucket whatever you use, Assign merge request to your other develop to review code, it will increase your productivity and code quality.
+
+
+Thanks for using app.
